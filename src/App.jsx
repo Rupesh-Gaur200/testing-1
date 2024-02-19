@@ -17,7 +17,7 @@ function App() {
          <Landing></Landing>
 
            <Marquee></Marquee>  
-           <NewSegment></NewSegment>
+            <NewSegment></NewSegment> 
          </div>
     </>
   )
