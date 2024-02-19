@@ -3,6 +3,7 @@ import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 
 import Marquee from "./components/Marquee";
+import NewSegment from "./components/NewSegment";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
          <Landing></Landing>
 
            <Marquee></Marquee>  
+           <NewSegment></NewSegment>
          </div>
     </>
   )
