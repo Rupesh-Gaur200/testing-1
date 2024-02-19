@@ -1,14 +1,14 @@
-
+import { motion } from "framer-motion"
 
 function Marquee(){
     return(
        
-        <div className="rounded-t-2xl w-full h-48 bg-emerald-800 ">
+        <div className="rounded-t-2xl w-full h-72 bg-emerald-800  overflow-hidden ">
                
-               <div className="flex gap-8 mx-4">
-              {["Ochi's let's begin","Ochi's let's begin"].map((item,index)=>(
+               <div className="pt-8 border-t-2 border-b-2  border-white  mt-8 mb-8 flex  gap-10  overflow-hidden">
+              {["Ochi's let's begin","Ochi's let's begin","Ochi's let's begin","Ochi's let's begin",].map((item,index)=>(
             
-                <h1 key={index} className="pt-10 text-8xl">{item} </h1>
+                <motion.h1 initial={{x:0}} animate={{x:"-110%"}} transition={{ease:"linear", repeat:Infinity, duration:7}}  key={index} className=" pt-4 pb-12 text-9xl  whitespace-nowrap">{item} </motion.h1>
               )) }
               </div>
       
