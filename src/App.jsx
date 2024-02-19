@@ -15,7 +15,7 @@ function App() {
       
          <Landing></Landing>
 
-         {/* <Marquee></Marquee> */}
+           <Marquee></Marquee>  
          </div>
     </>
   )
