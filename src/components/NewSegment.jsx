@@ -64,6 +64,9 @@ We create tailored presentations to help you persuade your colleagues, clients, 
                 
                 <div className="">
                     <h1 className="  font-[Ubuntu-light-300] text-[3vw] font-semibold">Our approach:</h1>
+                    
+                    <button className="border-2 w-36 border-black pb-2 pt-2 pr-2 pl-2 bg-black rounded-3xl text-slate-200">Read More</button>
+
                 </div>
 
                 <div className="">
