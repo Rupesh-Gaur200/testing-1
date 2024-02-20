@@ -4,16 +4,16 @@ function NewSegment(){
  
 
     return(
-        <div className="bg-yellow-400 w-full py-20 rounded-t-3xl text-black">
+        <div className="bg-yellow-400 w-full py-24 rounded-t-3xl text-black">
              
               <div className=" px-20 w-[85%]">
-              <h1 className=" font-['Ubuntu'] leading-none   text-[40px]">Ochi is a strategic partner for fast-grow­ing edu learning that need to raise self proclaimed, sell prod­ucts, ex­plain com­plex ideas, and hire great peo­ple.</h1>
+              <h1 className=" font-['Ubuntu'] leading-none   text-[40px]">Ochi is a strategic partner for fast-grow­ing edu learning that need to raise self proclaimed, self phase Learning, predicting ideas and Roadmap, having custom input, According to you.</h1>
               </div>
 
 
               <div className="border-t-2 border-b-2 border-zinc-500 mt-16 flex justify-between pb-24 pt-10 ">
 
-                <h1 className="px-20 w-[45%]">What you can expect:</h1>
+                <h1 className="px-20 w-[45%] font-bold">What you can expect:</h1>
 
                 <div className="flex flex-col gap-14  ">
 
@@ -42,9 +42,9 @@ We create tailored presentations to help you persuade your colleagues, clients, 
                    
                 
                 <div className="mx-40 pt-32">
-                    <h1>S:</h1>
+                    <h1 className="font-semibold">S:</h1>
                     <ul className="hover:cursor-pointer ">
-                        <li className="hover:border-b-2 border-zinc-700">Instagram</li>
+                        <li className="hover:border-b-2 border-zinc-700 ">Instagram</li>
                         <li className="hover:border-b-2 border-zinc-700">behance</li>
                         <li className="hover:border-b-2 border-zinc-700">Twitter</li>
                         <li className="hover:border-b-2 border-zinc-700">LinkedIn</li>
@@ -60,7 +60,20 @@ We create tailored presentations to help you persuade your colleagues, clients, 
               </div>
                   
 
-              <div className=" mt-16"></div>     
+              <div className="px-20 flex  justify-between mt-16">
+                
+                <div className="">
+                    <h1 className="  font-[Ubuntu-light-300] text-[3vw] font-semibold">Our approach:</h1>
+                </div>
+
+                <div className="">
+                     <img  className="rounded-lg" src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg"></img>
+                
+                </div>
+                
+                
+                
+                </div>     
 
 
         </div>
