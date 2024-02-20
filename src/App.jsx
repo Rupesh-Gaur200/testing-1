@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 
 import Marquee from "./components/Marquee";
 import NewSegment from "./components/NewSegment";
+import Game from "./components/Game";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
            <Marquee></Marquee>  
             <NewSegment></NewSegment> 
+            <Game></Game>
          </div>
     </>
   )
