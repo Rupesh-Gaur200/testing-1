@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 function Marquee(){
     return(
        
-        <div    className=" rounded-t-2xl w-full h-72 bg-emerald-800  overflow-hidden ">
+        <div  data-scroll data-scroll-section data-scroll-speed='.1'    className=" rounded-t-2xl w-full h-72 bg-emerald-800  overflow-hidden ">
                
                <div  className="pt-8 border-t-2 border-b-2  border-white  mt-8 mb-8 flex  gap-10  overflow-hidden">
               {["Ochi's let's begin","Ochi's let's begin","Ochi's let's begin","Ochi's let's begin",].map((item,index)=>(
