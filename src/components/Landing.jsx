@@ -6,9 +6,14 @@ import { VscGitFetch } from "react-icons/vsc";
 import { IoIosArrowDown } from "react-icons/io";
 
 
+
+
+
 function Landing(){
+
+
     return (
-        <div    className=" w-full h-screen overflow-hidden  bg-zinc-900 bg-[url(/src/assets/img1.jpg)] bg-cover pt-1">
+        <div data-scroll data-scroll-speed="-0.3" className=" w-full h-screen overflow-hidden  bg-zinc-900 bg-[url(/src/assets/img1.jpg)] bg-cover pt-1">
            
 
            {/* <video src={v1} autoPlay muted loop></video> */}
