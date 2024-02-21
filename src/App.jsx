@@ -5,11 +5,11 @@ import Marquee from "./components/Marquee";
 import NewSegment from "./components/NewSegment";
 import Game from "./components/Game";
 import StarCourse from "./components/StarCourse";
-
+import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
   
-
+   const locomotiveScroll = new LocomotiveScroll();
    return (
       
          <div className="w-full h-full bg-zinc-900 text-white">
