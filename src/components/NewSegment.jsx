@@ -4,7 +4,7 @@ function NewSegment(){
  
 
     return(
-        <div className="bg-yellow-400 w-full py-24 rounded-t-3xl text-black">
+        <div className=" bg-yellow-400 w-full py-24 rounded-t-3xl text-black">
              
               <div className=" px-20 w-[85%]">
               <h1 className=" font-['Ubuntu'] leading-none   text-[40px]">Ochi is a strategic partner for fast-grow­ing edu learning that need to raise self proclaimed, self phase Learning, predicting ideas and Roadmap, having custom input, According to you.</h1>

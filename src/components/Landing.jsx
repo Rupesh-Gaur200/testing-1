@@ -8,17 +8,17 @@ import { IoIosArrowDown } from "react-icons/io";
 
 function Landing(){
     return (
-        <div className=" w-full h-screen bg-zinc-900 bg-[url(/src/assets/img1.jpg)] bg-cover pt-1">
+        <div    className=" w-full h-screen overflow-hidden  bg-zinc-900 bg-[url(/src/assets/img1.jpg)] bg-cover pt-1">
            
 
            {/* <video src={v1} autoPlay muted loop></video> */}
        
 
-            <div className='z-[23] text mt-56 px-20 '>
+            <div  className='z-[23] text mt-56 px-20 '>
 
 
                 {["we create",,"personlized","learning expernices."].map((item,index)=>(
-                 <div key={index} className='masker m-1'>
+                 <div   key={index} className='masker m-1'>
                  <h1 className='leading-none uppercase text-7xl font-semibold '>{item}</h1>
              </div>  
               
