@@ -17,7 +17,7 @@ window.addEventListener("mousemove",(e)=>{
   let posy =y-window.innerHeight/2 
 
   var angle=Math.atan2(posy,posx)*(180/Math.PI)
-  console.log(angle)
+  
   setRotation(angle-180)
 
 })
