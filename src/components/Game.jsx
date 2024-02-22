@@ -34,24 +34,26 @@ window.addEventListener("mousemove",(e)=>{
 
                       <div className=" flex justify-center gap-10 absolute top-1/2  left-1/2 -translate-x-[50%] -translate-y-[80%]  ">
                         <div className=" flex items-center justify-center w-[12vw] h-[12vw] rounded-full bg-zinc-200 ">
-                        <div className=" relative w-[8vw] h-[8vw] rounded-full bg-black ">
-
-
+                
+                        <div className=" relative w-[8vw] h-[8vw] rounded-full bg-black hover:cursor-pointer ">
+                        <a className="z-[2] absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold " href="https://poki.com/" target="_blank">Games</a>
+                          
                           <div style={{transform: `translate(-50%,-50%) rotate(${rotation}deg)`}} className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full h-10 ">
-
+                              
                           
                         <div className="w-[2vw] h-[2vw] rounded-full bg-zinc-200 ">
                               
-
+                              
                               </div>
+                              
                               </div>
                               </div>
 
                         </div>
                         <div className=" flex items-center justify-center w-[12vw] h-[12vw] rounded-full bg-zinc-200 ">
-                        <div className=" relative flex justify-center items-center w-[8vw] h-[8vw] rounded-full bg-black ">
+                        <div className=" relative flex justify-center items-center w-[8vw] h-[8vw] rounded-full bg-black hover:cursor-pointer ">
 
-
+                        <a className=" z-[2] absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] font-semibold" href="https://poki.com/" target="_blank">Games</a>
                           <div style={{transform: `translate(-50%,-50%) rotate(${rotation}deg)`}} className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]   w-full h-10">
                         <div className="w-[2vw] h-[2vw] rounded-full bg-zinc-200 ">
                               
