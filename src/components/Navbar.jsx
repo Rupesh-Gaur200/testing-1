@@ -11,7 +11,7 @@ function Navbar(){
     if(window.scrollY>2480 && window.scrollY<3000){
       
         setActive(true)
-       console.log(window.scrollY)
+     
     }
     else{
         setActive(false)
