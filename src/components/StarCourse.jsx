@@ -1,16 +1,18 @@
 
 import {useState} from 'react';
 import VideoContainer from './VideoContainer';
-
+import axios from 'axios';
 function StarCourse(){
  
      const[search , setSearch]=useState("")
      
      function handleSubmit(e){
         e.preventDefault()
-        
-        setSearch("")
-        console.log(search)
+        axios.get('https://www.googleapis.com/youtube/v3/search?key=AIzaSyDjIbC7qoyRJFTTR7UfDCR0V8ccHTn5aMw&part=snippet&q=${search}')
+        .then((res)=>{
+               console.log(res)
+             })
+       
      }
 
      
