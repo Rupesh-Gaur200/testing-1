@@ -2,9 +2,9 @@ import VideoShow from "./VideoShow"
 
 function VideoContainer(){
     return(
-        <div className="w-full px-20 h-full border-2 border-red ">
+        <div className="w-full px-20 h-full  ">
 
-        <div className="w-full px-20 h-full border-2 border-green-200 ">
+        <div className="w-full px-20 h-full  ">
 
                <VideoShow></VideoShow>
 
