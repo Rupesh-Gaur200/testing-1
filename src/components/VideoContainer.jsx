@@ -1,12 +1,12 @@
 import VideoShow from "./VideoShow"
 
-function VideoContainer(){
+function VideoContainer({d}){
     return(
         <div className="w-full px-20 h-full  ">
 
         <div className="w-full px-20 h-full  ">
 
-               <VideoShow></VideoShow>
+               <VideoShow d={d}></VideoShow>
 
         </div>
 
