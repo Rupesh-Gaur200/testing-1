@@ -18,7 +18,7 @@ function StarCourse(){
 
 
     return (
-        <div className=" w-full  h-screen bg-zinc-900 overflow-hidden">
+        <div className=" w-full h-full  bg-zinc-900 ">
 
               <div className="   my-40 mx-20  ">
                 <form onSubmit={handleSubmit} className=' flex mx-[340px] gap-8'>
