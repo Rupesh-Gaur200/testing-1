@@ -5,14 +5,21 @@ import axios from 'axios';
 function StarCourse(){
  
      const[search , setSearch]=useState("")
-     
+     const[d, setD] =useState([])
+     const[durl , setdurl] =useState([])
+
      function handleSubmit(e){
         e.preventDefault()
-        axios.get('https://www.googleapis.com/youtube/v3/search?key=AIzaSyDjIbC7qoyRJFTTR7UfDCR0V8ccHTn5aMw&part=snippet&q=${search}')
+        axios.get(`https://www.googleapis.com/youtube/v3/search?key=AIzaSyDjIbC7qoyRJFTTR7UfDCR0V8ccHTn5aMw&part=snippet&q=${search}&maxResult=5`)
         .then((res)=>{
-               console.log(res)
+                const result= res.data.items
+                setD(result)
              })
        
+
+     
+      
+
      }
 
      
@@ -32,7 +39,7 @@ function StarCourse(){
               </div>
           
 
-           <VideoContainer></VideoContainer>
+           <VideoContainer d={d} ></VideoContainer>
 
 
 
