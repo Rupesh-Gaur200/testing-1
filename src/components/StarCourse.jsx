@@ -10,7 +10,7 @@ function StarCourse(){
 
      function handleSubmit(e){
         e.preventDefault()
-        axios.get(`https://www.googleapis.com/youtube/v3/search?key=AIzaSyDjIbC7qoyRJFTTR7UfDCR0V8ccHTn5aMw&part=snippet&q=${search}&maxResult=5`)
+        axios.get(`https://www.googleapis.com/youtube/v3/search?key=AIzaSyDjIbC7qoyRJFTTR7UfDCR0V8ccHTn5aMw&part=snippet&q=${search}&maxResults=36`)
         .then((res)=>{
                 const result= res.data.items
                 setD(result)
@@ -27,9 +27,9 @@ function StarCourse(){
 
 
     return (
-        <div className=" w-full h-full  bg-zinc-900 ">
+        <div className=" w-full  bg-zinc-900 ">
 
-              <div className="   my-40 mx-20  ">
+              <div className="    mt-40 mb-20 mx-20  ">
                 <form onSubmit={handleSubmit} className=' flex mx-[340px] gap-8'>
                 <input   type="text" placeholder='Search Videos...' value={search} onChange={(e)=>{setSearch(e.target.value)}} className="  w-[650px]  pl-4 pt-1 pb-1 rounded-lg bg-slate-600  ">
         
