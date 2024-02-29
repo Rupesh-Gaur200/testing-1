@@ -10,16 +10,17 @@ import { IoIosArrowDown } from "react-icons/io";
 
 
 function Landing(){
-    const openMediaDevices = async (constraints) => {
-        return await navigator.mediaDevices.getUserMedia(constraints);
-    }
+    // const openMediaDevices = async (constraints) => {
+    //     return await navigator.mediaDevices.getUserMedia(constraints);
+    // }
     
-    try {
-        const stream = openMediaDevices({'video':true,'audio':true});
-        console.log('Got MediaStream: Webcam Accessed', stream);
-    } catch(error) {
-        console.error('Error accessing media devices.', error);
-    }
+    // try {
+    //     const stream = openMediaDevices({'video':true,'audio':true});
+    //     console.log('Webcam Accessed',stream);
+        
+    // } catch(error) {
+    //     console.error('Please Give permission to access webcam and microphone.', error);
+    // }
 
     return (
         <div data-scroll data-scroll-speed="-0.3" className=" w-full h-screen overflow-hidden  bg-zinc-900 bg-[url(/src/assets/img1.jpg)] bg-cover pt-1">
