@@ -27,7 +27,7 @@ function StarCourse(){
 
 
     return (
-        <div className=" w-full  bg-zinc-900 ">
+        <div  className=" w-full  bg-zinc-900 ">
 
               <div className="    mt-40 mb-20 mx-20  ">
                 <form onSubmit={handleSubmit} className=' flex mx-[340px] gap-8'>
