@@ -8,6 +8,7 @@ import StarCourse from "./components/StarCourse";
 import LocomotiveScroll from 'locomotive-scroll';
 import Docs from "./components/Docs";
 import Footer from "./components/Footer";
+import CusTomWebCam from "./components/CusTomWebCam";
 function App() {
   
    const locomotiveScroll = new LocomotiveScroll();
@@ -15,13 +16,16 @@ function App() {
       
          <div className="w-full h-full bg-zinc-900 text-white">
             <Navbar />
+          
             <Landing />
+           
             <Marquee />
             <NewSegment />
             <Game />
             <StarCourse />
             <Docs></Docs>
             <Footer></Footer>
+            <CusTomWebCam></CusTomWebCam>
          </div>
       
    );
