@@ -5,8 +5,14 @@ import img1 from'/src/assets/img1.jpg'
 import { VscGitFetch } from "react-icons/vsc";
 import { IoIosArrowDown } from "react-icons/io";
 
-
-
+import '@mediapipe/face_detection';
+import '@tensorflow/tfjs-core';
+// Register WebGL backend.
+import '@tensorflow/tfjs-backend-webgl';
+import * as faceDetection from '@tensorflow-models/face-detection';
+import Webcam from "react-webcam";
+import { useRef , useState ,useCallback} from "react";
+    
 
 
 function Landing(){
@@ -21,6 +27,16 @@ function Landing(){
     // } catch(error) {
     //     console.error('Please Give permission to access webcam and microphone.', error);
     // }
+
+    // const model = faceDetection.SupportedModels.MediaPipeFaceDetector;
+    // const detectorConfig = {
+    //   runtime: 'mediapipe', // or 'tfjs'
+    // }
+    // const detector = async ()=>{ await faceDetection.createDetector(model, detectorConfig);}
+    // const faces = async()=> await detector.estimateFaces(image);
+    // console.log(faces)
+
+  
 
     return (
         <div data-scroll data-scroll-speed="-0.3" className=" w-full h-screen overflow-hidden  bg-zinc-900 bg-[url(/src/assets/img1.jpg)] bg-cover pt-1">
@@ -62,7 +78,7 @@ function Landing(){
                
        
      
-           
+         
 
 
            </div>
