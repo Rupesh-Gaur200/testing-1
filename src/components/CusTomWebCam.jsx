@@ -1,5 +1,20 @@
 import Webcam from "react-webcam"
 import { useRef, useState, useCallback } from "react"
+
+// Note: you do not need to import @tensorflow/tfjs here.
+
+import * as mobilenet from '@tensorflow-models/mobilenet';
+import * as tf from '@tensorflow/tfjs';
+
+
+
+// Load the model.
+
+
+// Classify the image.
+
+
+
 function CusTomWebCam() {
 
   const webcamRef = useRef(null)
@@ -38,6 +53,8 @@ function CusTomWebCam() {
     const imageSrc = webcamRef.current.getScreenshot();
     setImage(imageSrc);
     console.log(imageSrc)
+    lol()
+    
   }, [webcamRef,setImage]);
 
 
@@ -46,6 +63,24 @@ function CusTomWebCam() {
     facingMode: "user"
   };
   
+  async function lol(){
+    const model = await mobilenet.load();
+    const img = document.getElementById('img');
+    console.log(img)
+    const predictions = await model.classify(img);
+    if(model){
+      console.log("Model Loaded Successfully")
+      console.log('Predictions: ');
+      console.log(predictions);
+      if(predictions){
+        console.log("Model Predicted the values")
+      }
+      
+    }
+    else{
+      console.log("Model is not loaded")
+    }
+  }
   
     
   // const capture = useCallback(() => {
@@ -76,7 +111,7 @@ function CusTomWebCam() {
         <button onClick={capture}>Capture ScreenShot</button>
       </div>
       <div>
-        <img src={getimage}></img>
+        <img id="img" src={getimage}></img>
       </div>
 
 
