@@ -4,7 +4,7 @@ function CusTomWebCam() {
 
   const webcamRef = useRef(null)
 
-  const [getimage, setImage] = useState(null)
+  const [getimage, setImage] =useState(null);
 
 
   const [oncam, setCam] = useState(false)
@@ -30,6 +30,24 @@ function CusTomWebCam() {
     }
   }
 
+
+
+
+  
+     const capture = useCallback(() => {
+    const imageSrc = webcamRef.current.getScreenshot();
+    setImage(imageSrc);
+    console.log(imageSrc)
+  }, [webcamRef,setImage]);
+
+
+  const videoConstraints = {
+   
+    facingMode: "user"
+  };
+  
+  
+    
   // const capture = useCallback(() => {
   //     const imageSrc = webcamRef.current.getScreenshot();
   //     setIm(imageSrc);
@@ -40,16 +58,27 @@ function CusTomWebCam() {
 
       <div>
         {oncam ?
-          <Webcam></Webcam> :
+         <Webcam
+         audio={false}
+         ref={webcamRef}
+         screenshotFormat="image/jpeg"
+         videoConstraints={videoConstraints}
+       />:
           console.log("Click on Capture photo button")}
       </div>
 
 
 
-      <div className=" border-2 border-red-500 ">
+      <div className=" border-2 border-red-500 flex gap-24 ">
 
         <button id="btn" onClick={activateCam}>OnWebCam</button>
+
+        <button onClick={capture}>Capture ScreenShot</button>
       </div>
+      <div>
+        <img src={getimage}></img>
+      </div>
+
 
     </div>
   )
